@@ -1,97 +1,119 @@
 # elijahwright04-CC.github.io 
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us | Caffeinated Climbing</title>
-
-    <!-- Bootstrap 4 CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+    <title>Caffeinated Climbing | Adventure Guide Service</title>
     <style>
-        /* Custom Styles */
-        .hero-section {
+        /* General reset and typography */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
             background-color: #2a3d4f;
             color: white;
-            padding: 60px 0;
+            text-align: center;
+            padding: 50px 0;
         }
-        .hero-section h1 {
+        header h1 {
             font-size: 3rem;
         }
-        .team-member img {
-            border-radius: 50%;
-            max-width: 150px;
-            margin-bottom: 15px;
+        header p {
+            font-size: 1.2rem;
         }
-        .team-member h4 {
-            margin-top: 10px;
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            padding: 0 20px;
         }
-        .team-member p {
-            font-style: italic;
-            color: #555;
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 30%;
         }
-        .section-title {
-            margin-bottom: 30px;
+        .service h2 {
+            font-size: 1.8rem;
+            color: #2a3d4f;
+        }
+        .service p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* Contact Section */
+        .cta {
+            background-color: #ffcc00;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .cta p {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-<!-- Hero Section -->
-<div class="hero-section text-center">
+<header>
     <h1>Caffeinated Climbing</h1>
-    <p>Your Adventure Guide Service</p>
-</div>
+    <p>Your Adventure Awaits</p>
+</header>
 
-<!-- About Us Section -->
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="section-title text-center">Our Story</h2>
-            <p class="lead text-center">Caffeinated Climbing is more than just an adventure guide service. We're a group of passionate outdoor enthusiasts who believe that everyone deserves to experience the wilderness and push their limits. Our guides specialize in backpacking, climbing, and land navigation, ensuring that every journey is safe, exciting, and empowering.</p>
-        </div>
+<section class="services">
+    <div class="service">
+        <h2>Backpacking</h2>
+        <p>Explore the wilderness with our experienced guides, who will ensure your safety and enjoyment along the way.</p>
     </div>
+    <div class="service">
+        <h2>Climbing</h2>
+        <p>Challenge yourself with thrilling rock climbing experiences, guided by certified experts.</p>
+    </div>
+    <div class="service">
+        <h2>Land Navigation</h2>
+        <p>Master the art of orienteering and navigate with confidence using maps, compasses, and GPS technology.</p>
+    </div>
+</section>
 
-   <!-- Meet the Team Section -->
-<h2 class="section-title text-center my-5">Meet the Team</h2>
-<div class="row text-center">
-    <div class="col-md-4 mb-4">
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="John Doe" class="img-fluid rounded-circle">
-            <h4>John Doe</h4>
-            <p>Lead Guide & Founder</p>
-            <p>John has over 15 years of experience in outdoor guiding, specializing in rock climbing and wilderness survival. His passion for the outdoors is contagious, and he’s committed to creating unforgettable experiences for every adventurer.</p>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="Jane Smith" class="img-fluid rounded-circle">
-            <h4>Jane Smith</h4>
-            <p>Navigation Expert</p>
-            <p>Jane is an expert in land navigation and orienteering. With a keen sense of direction and a love for teaching others, she helps clients build the skills necessary to confidently navigate through the wilderness.</p>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="Mike Johnson" class="img-fluid rounded-circle">
-            <h4>Mike Johnson</h4>
-            <p>Climbing Instructor</p>
-            <p>Mike is a certified climbing instructor with a deep love for the vertical world. His goal is to inspire climbers to push their limits while ensuring safety and enjoyment on every climb.</p>
-        </div>
-    </div>
-</div>
+<section class="cta">
+    <h2>Ready for Your Next Adventure?</h2>
+    <p>Contact us today to start planning your adventure with Caffeinated Climbing!</p>
+</section>
 
-<!-- Contact Section -->
-<h2 class="section-title text-center my-5">Contact Us</h2>
-<p class="text-center">Are you ready to embark on your next adventure? Get in touch with us and let’s make it happen!</p>
-<div class="text-center">
-    <p><strong>Address:</strong> Suite 214B, 1815 Moore Street, Huntingdon, PA 16652</p>
-    <p><strong>Email:</strong> <a href="mailto:info@caffeinatedclimbing.com">info@caffeinatedclimbing.com</a></p>
-    <p><strong>Phone:</strong> (814) 555-1234</p>
-</div>
+<footer>
+    <p>&copy; 2024 Caffeinated Climbing | All Rights Reserved</p>
+</footer>
 
-    
 </body>
 </html>
